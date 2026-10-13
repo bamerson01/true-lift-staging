@@ -1,9 +1,10 @@
 # True Lift Garage Doors — staging preview
 
-Private staging copy of the charcoal design mockup for review. Not the production site.
+Preview copy of the production build for review. Not the production site.
 
-- Every page carries `noindex,nofollow`.
-- Call and Text controls are demonstrations; Book online opens the real Housecall Pro page.
-- The contact form does not submit.
-- Built by `scripts/build-staging.py` from `mockups/charcoal-home/dist` in the project workspace;
+- Every page carries `noindex,nofollow`; canonicals point to https://trueliftgaragedoor.com.
+- Call and Text links are real and dial or text 435-900-4557.
+- Book online opens the real Housecall Pro booking window.
+- The contact form is live: submissions are emailed to True Lift through FormSubmit.
+- Built by `scripts/build-staging.py` from `release/site` in the project workspace;
   do not edit files here by hand.

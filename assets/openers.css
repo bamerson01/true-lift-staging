@@ -15,18 +15,18 @@
 .opener-diagram{display:block;width:100%;height:auto;max-height:340px;margin:17px 0 8px}
 .opener-symptom-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
 .opener-symptom-controls[hidden]{display:none}
-.opener-symptom-controls button{min-height:44px;border:1px solid #53646c;background:transparent;color:#d8dde0;font-size:14px;font-weight:650;text-transform:uppercase;line-height:1.4;padding:8px 5px;cursor:pointer}
-.opener-symptom-controls button:hover{border-color:#a1ba8a;color:white}
-.opener-symptom-controls button[aria-pressed=true]{color:#c5e397;background:#84b93518;border-color:var(--green)}
-.opener-symptom-controls button:focus-visible{outline:2px solid white;outline-offset:3px}
+.opener-symptom-controls :is(button,.as-button){min-height:44px;border:1px solid #53646c;background:transparent;color:#d8dde0;font-size:14px;font-weight:650;text-transform:uppercase;line-height:1.4;padding:8px 5px;cursor:pointer}
+.opener-symptom-controls :is(button,.as-button):hover{border-color:#a1ba8a;color:white}
+.opener-symptom-controls :is(button,.as-button)[aria-pressed=true]{color:#c5e397;background:#84b93518;border-color:var(--green)}
+.opener-symptom-controls :is(button,.as-button):focus-visible{outline:2px solid white;outline-offset:3px}
 #opener-explanation{padding-top:23px;min-height:245px}#opener-explanation article[hidden]{display:none}
 #opener-explanation .selected-symptom{font-size:14px;color:#c5e397;margin:0 0 10px;line-height:1.5}
 #opener-explanation h3{font-size:21px;line-height:1.2}#opener-explanation p:not(.selected-symptom){font-size:14px;line-height:1.75;margin-top:12px;color:#c1cdd3}#opener-explanation .text-link{font-size:14px;margin-top:12px;gap:16px}
 .opener-system figcaption{display:block;margin-top:16px;padding-top:13px;border-top:1px solid #3e4f57;letter-spacing:0;font-size:14px;line-height:1.5}
 @media(max-width:1100px){.opener-diagnostic{gap:32px}.opener-intro h2{font-size:32px}.opener-system{padding:18px}#opener-explanation{min-height:290px}}
 @media(max-width:991px){#opener-explanation{min-height:335px}}
-@media(max-width:767px){.opener-diagnostic{grid-template-columns:1fr;gap:30px}.opener-intro>p:not(.eyebrow){font-size:16px;max-width:none}.opener-system{padding:17px}.opener-system .explorer-label{font-size:14px}.opener-symptom-controls button{font-size:14px}#opener-explanation{min-height:335px}#opener-explanation h3{font-size:20px}}
-@media(max-width:360px){#opener-explanation{min-height:345px}.opener-symptom-controls button{font-size:14px}}
+@media(max-width:767px){.opener-diagnostic{grid-template-columns:1fr;gap:30px}.opener-intro>p:not(.eyebrow){font-size:16px;max-width:none}.opener-system{padding:17px}.opener-system .explorer-label{font-size:14px}.opener-symptom-controls :is(button,.as-button){font-size:14px}#opener-explanation{min-height:335px}#opener-explanation h3{font-size:20px}}
+@media(max-width:360px){#opener-explanation{min-height:345px}.opener-symptom-controls :is(button,.as-button){font-size:14px}}
 
 /* Supplied equipment photo anchors the repair-or-replace comparison. */
 .opener-options .opener-options-heading{display:grid;grid-template-columns:.94fr 1.06fr;gap:62px;align-items:center;margin-bottom:44px}

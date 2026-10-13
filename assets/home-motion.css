@@ -1,0 +1,28 @@
+/* Homepage-only motion layer. All content is visible without this stylesheet. */
+.home-motion-ready .motion-arrive,
+.home-motion-ready .system-visual.motion-arrive .draw-line{animation:none}
+.home-motion-ready .diagram-motion-actions{display:flex;align-items:center;gap:10px}
+.home-motion-ready .system-replay{border:0;background:none;color:#becacc;font:inherit;font-size:14px;min-height:44px;padding:8px 4px;cursor:pointer;white-space:nowrap}
+.home-motion-ready .system-replay:hover{color:#a8d65e}
+.home-motion-ready .system-replay[hidden]{display:none}
+.home-motion-ready .system-hint{font-size:14px;color:#b1bec3;margin:6px 0 14px;line-height:1.5}
+.home-motion-ready .system-visual{position:relative;border-top-color:#64724f;background:radial-gradient(ellipse at 50% 32%,#29382a55,transparent 60%),linear-gradient(145deg,#1c2428,#161d20)}
+.home-motion-ready .system-visual:after{display:block;content:'';position:absolute;top:-1px;left:0;width:var(--system-trace,100%);height:2px;background:#9dcc55;pointer-events:none;mask-image:linear-gradient(90deg,#000, #000 75%,transparent)}
+.home-motion-ready .part-controls button{position:relative;transition:background-color .2s,border-color .2s,color .2s}
+.home-motion-ready .part-controls button[aria-pressed="true"]{background:#354525;border-color:#8cbd45;color:#e5f2ce}
+.home-motion-ready .part-controls button:hover{border-color:#8cbd45;color:#fff}
+.home-motion-ready .part-description{min-height:80px}
+.home-motion-active .diagram-part{transition:none}
+.home-motion-active .door-panels{transition:none}
+.home-motion-active .system-visual.is-open .door-panels{transform:none}
+.home-motion-ready .process-grid li:after{content:'';position:absolute;top:-1px;left:0;width:var(--step-progress,100%);height:2px;background:#527a26}
+@media(max-width:767px){
+ .home-motion-ready .diagram-toolbar{flex-wrap:wrap;gap:6px}
+ .home-motion-ready .diagram-motion-actions{margin-left:auto;gap:8px}
+ .home-motion-ready .system-replay{font-size:14px}
+ .home-motion-ready .system-hint{font-size:14px;margin-bottom:12px}
+ .home-motion-ready .part-description{min-height:96px}
+}
+@media(prefers-reduced-motion:reduce){.home-motion-ready .system-visual:after,.home-motion-ready .process-grid li:after{width:100%}.home-motion-ready .system-replay{display:none}}
+
+.home-motion-ready #explore-system{scroll-margin-top:100px}

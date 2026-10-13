@@ -1,0 +1,103 @@
+/* Shared component contract. Important declarations are limited to CTA sizing
+   so these tokens replace the earlier page-specific mockup overrides. */
+:root{--cta-font-size:14px;--cta-height:50px;--cta-gap:10px;--cta-padding:13px 18px;--cta-stack-width:320px}
+main .button{font-size:var(--cta-font-size)!important;min-height:var(--cta-height)!important;padding:var(--cta-padding)!important;gap:var(--cta-gap)!important;line-height:1.4;font-weight:700;text-transform:uppercase;letter-spacing:.015em;white-space:normal;text-align:center}
+main .button .cta-icon{width:19px;height:19px;flex:0 0 19px;stroke-width:3;vertical-align:middle}
+header .button{font-size:12px;min-height:46px;padding:11px 16px;gap:10px}
+body main .services-closing .wrap>div:last-child{width:100%;max-width:var(--cta-stack-width);justify-self:end}
+body main .services-closing .actions{width:100%;align-items:stretch;gap:12px}
+body main .services-closing .actions>.button{width:100%;min-width:0}
+main .button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+main .process .button:focus-visible{outline-color:#202529}
+
+/* User-approved direction: uninterrupted green band with white safety copy. */
+body main .warning-band{padding:20px 0;background:#84b935;border-block:1px solid #84b935;color:#fff}
+body main .warning-band .warning-layout{display:flex;align-items:center;gap:24px}
+body main .warning-band .warning-message{display:flex;align-items:center;gap:18px;flex:1;min-width:0;padding:0;background:transparent;color:#fff}
+body main .warning-band .warning-message>.line-icon{width:42px;height:42px;flex:0 0 42px;color:#fff}
+body main .warning-band .warning-message>.line-icon .accent{stroke:#fff}
+body main .warning-band .warning-copy{min-width:0}
+body main .warning-band h2{font-size:20px;line-height:1.25;letter-spacing:-.025em;color:#fff;margin:0}
+body main .warning-band p{font-size:15px;line-height:1.6;color:#fff;margin:6px 0 0}
+body main .warning-band .warning-copy .text-link{font-size:14px;min-height:44px;gap:12px;margin:6px 0 -6px;color:#fff}
+body main .warning-band .warning-action{flex:0 0 auto}
+body main .warning-band .warning-action .button{width:100%;min-width:220px;margin:0;background:#202529;border-color:#202529;color:#fff;white-space:nowrap}
+body main .warning-band .warning-action .button:hover{background:#323b40}
+body main .warning-band .warning-action .button:focus-visible{outline-color:#202529;outline-offset:4px}
+@media(max-width:991px){body main .warning-band .warning-layout{gap:18px}body main .warning-band .warning-message{padding:0;gap:14px}body main .warning-band h2{font-size:19px}body main .warning-band .warning-action .button{min-width:205px}}
+@media(max-width:767px){
+ body main .services-closing .wrap>div:last-child{max-width:none}
+ body main .warning-band{padding:18px 0}
+ body main .warning-band .warning-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+ body main .warning-band .warning-message{align-items:flex-start;padding:0;gap:14px}
+ body main .warning-band .warning-message>.line-icon{width:30px;height:30px;flex-basis:30px}
+ body main .warning-band h2{font-size:19px;line-height:1.3}
+ body main .warning-band p{font-size:14px;line-height:1.65;margin-top:9px}
+ body main .warning-band .warning-action{width:100%;min-width:0}
+ body main .warning-band .warning-action .button{min-width:0;width:100%}
+}
+@media(max-width:359px){body main .warning-band .warning-message{padding:0;gap:12px}body main .warning-band h2{font-size:18px}}
+
+/* Homepage: one clear message, two actions, and quieter supporting detail. */
+.hero.hero-focused .hero-layout{display:block;padding-top:76px;padding-bottom:38px}
+.hero.hero-focused .hero-copy{max-width:850px}
+.hero.hero-focused h1{font-size:clamp(40px,3.65vw,50px);line-height:1.07;max-width:850px}
+.hero.hero-focused .lead{max-width:535px;font-size:18px;line-height:1.65;margin:26px 0 28px}
+.hero.hero-focused .hero-reassurance{font-size:14px;color:#c8d0d4;line-height:1.7;margin-top:20px}
+.hero.hero-focused:after{opacity:.035}
+.hero.hero-focused .hero-bottom{justify-content:flex-end;padding-top:0;padding-bottom:22px}
+.hero.hero-focused .video-toggle{border-color:#ffffff30;background:#171d2066;font-size:14px;min-height:36px}
+@media(min-width:768px){.hero.hero-focused .hero-visual{display:none}.hero.hero-focused .actions{flex-direction:row;width:auto;max-width:none}}
+@media(max-width:767px){
+ .hero.hero-focused .hero-layout{padding-top:36px;padding-bottom:28px}
+ .hero.hero-focused h1{font-size:36px}
+ .hero.hero-focused .lead{font-size:16px;margin:22px 0}
+ .hero.hero-focused .hero-reassurance{font-size:14px;margin-top:16px}
+ .hero.hero-focused .hero-visual{margin-top:28px}
+ .hero.hero-focused .hero-bottom{display:none}
+}
+@media(max-width:359px){.hero.hero-focused h1{font-size:31px}}
+
+/* The homepage introduction and warning band occupy the first viewport. */
+.home-intro{display:flex;flex-direction:column;min-height:calc(100svh - var(--home-header-height,111px))}
+.home-intro .hero.hero-focused{flex:1;display:flex;flex-direction:column}
+.home-intro .hero.hero-focused .hero-layout{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px}
+.home-intro .warning-band{flex:none}
+@media(max-width:767px){
+ .home-intro{min-height:calc(100svh - var(--home-header-height,95px) - 56px - env(safe-area-inset-bottom))}
+ .home-intro .hero.hero-focused .hero-layout{padding-block:36px}
+}
+
+/* Shared phone actions use the call-only label across all preview pages. */
+[data-action="call"]{text-transform:uppercase;letter-spacing:.015em}
+
+/* Shared footer: separate service discovery from the rest of the site. */
+.footer-top.footer-columns{grid-template-columns:minmax(0,1.15fr) minmax(0,1.05fr) minmax(0,.8fr) minmax(0,1fr);gap:clamp(24px,3vw,48px);align-items:start}
+.footer-columns>*,.footer-columns nav{min-width:0}
+.footer-columns nav a{padding-block:7px;line-height:1.55}
+.footer-columns nav a:hover{color:var(--green)}
+.footer-columns nav a:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.footer-columns .footer-contact .footer-phone{font-size:14px;white-space:normal;text-align:left}
+@media(min-width:768px) and (max-width:1099px){.footer-top.footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 48px}}
+@media(max-width:767px){.footer-top.footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 24px}.footer-columns>div{grid-column:1/-1}.footer-columns nav a{font-size:14px;min-height:44px}.footer-columns .footer-contact{border-top:1px solid #ffffff17;padding-top:24px}}
+@media(max-width:359px){.footer-top.footer-columns{column-gap:18px}.footer-columns nav a{font-size:14px}}
+
+/* Task 046: legible supporting copy and aligned mobile testimonials. */
+.hero.hero-focused .hero-reassurance{font-size:16px;max-width:560px}
+body main .hero-copy .eyebrow{line-height:1.65;flex-wrap:wrap}
+body main .diagram-toolbar{flex-wrap:wrap;gap:10px}
+body main .diagram-motion-actions{flex-wrap:wrap}
+body main .part-controls button{flex-basis:calc(33.333% - 6px);font-size:14px}
+body main .part-controls button span{display:none}
+body main .system-visual figcaption{letter-spacing:.025em;line-height:1.6}
+body main figure figcaption{line-height:1.6;flex-wrap:wrap;gap:8px 16px}
+body main .video-review figcaption>span{max-width:150px}
+body main .hero-reassurance,body main .closing-note{font-size:16px}
+@media(max-width:767px){
+ body main .part-controls button{flex-basis:calc(50% - 6px)}
+ body main .process .section-heading h2 br{display:none}
+ body main .testimonial-layout .video-review{width:100%;max-width:none;justify-self:stretch}
+ body main .testimonial-layout .review-card figcaption{flex-wrap:wrap;gap:8px}
+ body main .video-review figcaption{margin-top:0}
+ body main .hero-copy .eyebrow{letter-spacing:.04em}
+}

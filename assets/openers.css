@@ -1,0 +1,57 @@
+/* Opener-specific composition, inheriting the approved service-page system. */
+.opener-page [id]{scroll-margin-top:100px}.opener-hero h1{max-width:610px;font-size:clamp(36px,3.6vw,51px)}.opener-hero .lead{margin-bottom:25px;max-width:530px}.opener-hero .repair-hero-photo{height:495px}.opener-hero .repair-hero-photo img{object-position:center 51%}.opener-urgent h2{font-size:20px}.opener-urgent p{font-size:14px}.opener-urgent .urgent-layout{gap:25px}.opener-urgent .urgent-layout>div{flex:1}.opener-urgent a{display:inline-flex;align-items:center;gap:14px;font-size:14px;font-weight:650;text-transform:uppercase;min-height:35px;color:white}.opener-urgent .button{font-size:14px;min-width:195px;gap:9px}.opener-urgent .cta-icon{width:18px;height:18px}.opener-highlight{color:#6d828d;transition:color .25s}.opener-highlight.is-active{color:var(--green)}.svg-label{font-family:Inter,Arial,sans-serif;font-size:9px;letter-spacing:.06em;fill:currentColor;stroke:none}
+.opener-inspection{display:grid;grid-template-columns:repeat(5,1fr);gap:26px;list-style:none;margin:0;padding:0}.opener-inspection li{border-top:1px solid #45535a;padding-top:25px}.opener-inspection .line-icon{width:49px;height:49px;margin-bottom:25px}.opener-inspection h3{font-size:20px;line-height:1.2;min-height:48px}.opener-inspection p{font-size:14px;line-height:1.7;margin-top:15px;color:#c3cdd2}.opener-method .method-choice{margin-top:40px}.opener-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px}.opener-choice-grid article{border-top:1px solid #bac6b8;padding-top:28px}.opener-choice-grid .line-icon{width:58px;height:58px;color:#42573e;margin-bottom:22px}.opener-choice-grid .line-icon .accent{stroke:#507526}.opener-choice-grid h3{font-size:31px;color:#202529}.opener-choice-grid h3 .stress{color:#507526}.opener-choice-grid article>p:last-child{font-size:17px;line-height:1.7;color:#46534b;margin-top:22px;max-width:500px}.compatibility-note{margin-top:40px;padding:28px 32px;background:#e2e7df;border-left:2px solid #63873c;display:grid;grid-template-columns:125px 1fr;gap:27px;align-items:center}.compatibility-icons{display:flex;gap:15px}.compatibility-icons .line-icon{width:48px;height:48px;color:#42573e}.compatibility-icons .accent{stroke:#507526}.compatibility-note .eyebrow{font-size:14px;margin-bottom:10px;color:#506e40}.compatibility-note h3{font-size:24px;color:#202529}.compatibility-note p:last-child{font-size:15px;line-height:1.75;color:#46534b;margin-top:12px}.opener-included .included-list .line-icon{width:56px;height:56px}.opener-cost-layout{display:grid;grid-template-columns:1fr 1.15fr;gap:65px;align-items:center}.opener-cost .cost-lead{font-size:22px;line-height:1.6;color:white}.opener-cost p:not(.eyebrow):not(.cost-lead){font-size:15px;line-height:1.75;margin-top:20px}.opener-cost .actions{margin-top:25px}.opener-cost .button{font-size:14px;padding-inline:16px}.opener-page .answer a{color:#b8db82;text-decoration:underline;text-underline-offset:4px}.opener-page .services-closing{border-top:1px solid #3b474e}.opener-page .spring-quote blockquote{font-size:21px}
+@media(max-width:1100px){.opener-hero h1{font-size:41px}.opener-inspection{gap:20px}.opener-inspection h3{font-size:18px}.opener-choice-grid{gap:45px}.opener-cost-layout{gap:45px}.opener-urgent h2{font-size:17px}}
+@media(max-width:991px){.opener-hero h1{font-size:35px}.opener-hero .repair-hero-photo{height:450px}.opener-inspection{grid-template-columns:repeat(3,1fr);gap:30px}.opener-inspection h3{min-height:0}.opener-choice-grid{gap:35px}.opener-choice-grid h3{font-size:27px}.opener-cost .actions{flex-direction:column;align-items:stretch}.opener-urgent .button{min-width:170px;font-size:14px}}
+@media(max-width:767px){.opener-page [id]{scroll-margin-top:85px}.opener-hero h1{font-size:35px}.opener-hero .repair-hero-photo{height:390px}.opener-hero .lead{margin-top:23px}.opener-urgent .urgent-layout{gap:16px}.opener-urgent .urgent-layout>div{flex-basis:calc(100% - 65px)}.opener-urgent h2{font-size:20px}.opener-urgent .button{width:100%;font-size:14px;min-height:48px}.opener-urgent a{font-size:14px}.opener-symptoms .section-heading,.opener-method .section-heading,.opener-options .section-heading{display:block}.opener-symptoms .section-heading>p,.opener-method .section-heading>p,.opener-options .section-heading>p{max-width:none;margin-top:22px}.opener-inspection{grid-template-columns:1fr;gap:26px}.opener-inspection li{display:grid;grid-template-columns:45px 1fr;gap:0 18px;padding-top:22px}.opener-inspection .line-icon{width:42px;height:42px;grid-row:1/3;margin:0}.opener-inspection h3{font-size:21px}.opener-inspection p{font-size:15px;margin-top:12px}.opener-choice-grid{grid-template-columns:1fr;gap:30px}.opener-choice-grid article{display:grid;grid-template-columns:48px 1fr;gap:0 18px;padding-top:24px}.opener-choice-grid .line-icon{width:45px;height:45px;grid-row:1/4;margin:0}.opener-choice-grid h3{font-size:25px}.opener-choice-grid .option-label{font-size:14px}.opener-choice-grid article>p:last-child{font-size:15px;margin-top:16px}.compatibility-note{grid-template-columns:1fr;gap:20px;padding:24px;margin-top:30px}.compatibility-icons{gap:13px}.compatibility-icons .line-icon{width:39px;height:39px}.compatibility-note h3{font-size:23px}.compatibility-note p:last-child{font-size:15px}.opener-included .included-list .line-icon{width:48px;height:48px}.opener-cost-layout{grid-template-columns:1fr;gap:25px}.opener-cost .cost-lead{font-size:20px}.opener-cost .button{font-size:14px}.opener-page .spring-quote blockquote{font-size:19px}}
+@media(max-width:360px){.opener-hero h1{font-size:30px}.opener-urgent .urgent-layout>div{flex-basis:calc(100% - 60px)}}
+@media(prefers-reduced-motion:reduce){.opener-highlight{transition:none}}
+@media(max-width:767px){.opener-urgent .urgent-layout>.button{grid-column:1/-1;white-space:nowrap;min-width:0;width:100%}}
+
+/* Match the contained explorer pattern used on the other service pages. */
+.opener-diagnostic{display:grid;grid-template-columns:.94fr 1.06fr;gap:62px;align-items:center}
+.opener-intro h2{font-size:39px}.opener-intro>p:not(.eyebrow){font-size:18px;line-height:1.75;margin-top:24px;max-width:440px}.opener-intro>.opener-explore-hint{font-size:14px!important;color:#aebdc3;border-top:1px solid #414c51;padding-top:22px}
+.opener-system{min-width:0;border:1px solid #46565f;background:linear-gradient(145deg,#263237,#192226);padding:24px}
+.opener-diagram{display:block;width:100%;height:auto;max-height:340px;margin:17px 0 8px}
+.opener-symptom-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.opener-symptom-controls[hidden]{display:none}
+.opener-symptom-controls button{min-height:44px;border:1px solid #53646c;background:transparent;color:#d8dde0;font-size:14px;font-weight:650;text-transform:uppercase;line-height:1.4;padding:8px 5px;cursor:pointer}
+.opener-symptom-controls button:hover{border-color:#a1ba8a;color:white}
+.opener-symptom-controls button[aria-pressed=true]{color:#c5e397;background:#84b93518;border-color:var(--green)}
+.opener-symptom-controls button:focus-visible{outline:2px solid white;outline-offset:3px}
+#opener-explanation{padding-top:23px;min-height:245px}#opener-explanation article[hidden]{display:none}
+#opener-explanation .selected-symptom{font-size:14px;color:#c5e397;margin:0 0 10px;line-height:1.5}
+#opener-explanation h3{font-size:21px;line-height:1.2}#opener-explanation p:not(.selected-symptom){font-size:14px;line-height:1.75;margin-top:12px;color:#c1cdd3}#opener-explanation .text-link{font-size:14px;margin-top:12px;gap:16px}
+.opener-system figcaption{display:block;margin-top:16px;padding-top:13px;border-top:1px solid #3e4f57;letter-spacing:0;font-size:14px;line-height:1.5}
+@media(max-width:1100px){.opener-diagnostic{gap:32px}.opener-intro h2{font-size:32px}.opener-system{padding:18px}#opener-explanation{min-height:290px}}
+@media(max-width:991px){#opener-explanation{min-height:335px}}
+@media(max-width:767px){.opener-diagnostic{grid-template-columns:1fr;gap:30px}.opener-intro>p:not(.eyebrow){font-size:16px;max-width:none}.opener-system{padding:17px}.opener-system .explorer-label{font-size:14px}.opener-symptom-controls button{font-size:14px}#opener-explanation{min-height:335px}#opener-explanation h3{font-size:20px}}
+@media(max-width:360px){#opener-explanation{min-height:345px}.opener-symptom-controls button{font-size:14px}}
+
+/* Supplied equipment photo anchors the repair-or-replace comparison. */
+.opener-options .opener-options-heading{display:grid;grid-template-columns:.94fr 1.06fr;gap:62px;align-items:center;margin-bottom:44px}
+.opener-options-intro{font-size:17px;line-height:1.75;color:#46534b;margin-top:24px;max-width:440px}
+.opener-equipment-photo{margin:0;border-bottom:3px solid var(--green)}
+.opener-equipment-photo img{display:block;width:100%;height:auto;aspect-ratio:768/405}
+@media(max-width:1100px){.opener-options .opener-options-heading{gap:32px}}
+@media(max-width:767px){.opener-options .opener-options-heading{grid-template-columns:1fr;gap:28px;margin-bottom:32px}.opener-options-intro{font-size:16px;max-width:none}}
+
+/* Optional smart features: benefits and conditions stay together. */
+.opener-upgrades{margin-top:44px;padding:36px;background:var(--charcoal,#202529);color:#d8dde0;border-top:3px solid var(--green)}
+.opener-upgrades .eyebrow{color:var(--green);font-size:14px;margin-bottom:14px}
+.opener-upgrades h3{color:white;font-size:31px;line-height:1.1;margin:0}
+.opener-upgrades h3 .stress{color:var(--green)}
+.upgrade-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:30px}
+.upgrade-grid article{border-top:1px solid #475259;padding-top:23px}
+.upgrade-grid .line-icon{width:46px;height:46px;color:#d8dde0;margin-bottom:20px}
+.upgrade-grid .line-icon .accent{stroke:var(--green)}
+.upgrade-grid h4{font-size:20px;line-height:1.15;text-transform:uppercase;color:white;margin:0}
+.upgrade-grid p{font-size:14px;line-height:1.75;margin-top:15px;color:#d0d8dc}
+.upgrade-grid .upgrade-detail{font-size:14px;line-height:1.65;color:#b1bec5;margin-top:12px}
+.upgrade-next{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:30px;padding-top:24px;border-top:1px solid #475259}
+.upgrade-next p{font-size:14px;line-height:1.7;max-width:520px;color:#c3cdd2}
+.upgrade-next strong{display:block;color:white;margin-bottom:4px}
+.upgrade-next .button{font-size:14px;flex-shrink:0}
+@media(max-width:1100px){.opener-upgrades{padding:28px}.upgrade-grid{gap:23px}.upgrade-grid h4{font-size:18px}.upgrade-next{align-items:start;flex-direction:column;gap:20px}}
+@media(max-width:767px){.opener-upgrades{padding:24px 20px;margin-top:32px}.opener-upgrades h3{font-size:27px}.upgrade-grid{grid-template-columns:1fr;gap:25px}.upgrade-grid article{display:grid;grid-template-columns:42px minmax(0,1fr);gap:0 16px}.upgrade-grid .line-icon{width:38px;height:38px;grid-row:1/4;margin:0}.upgrade-grid h4{font-size:20px}.upgrade-grid p{grid-column:2}.upgrade-grid .upgrade-detail{font-size:14px}.upgrade-next{gap:20px}.upgrade-next .button{width:100%;white-space:normal;text-align:center;padding-inline:12px;font-size:14px}}
+@media(max-width:400px){.opener-symptom-controls{grid-template-columns:1fr}}

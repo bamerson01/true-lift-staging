@@ -1,0 +1,7 @@
+/* Avoid stacking the older CSS arrivals with the GSAP enhancement. */
+.site-motion-ready .motion-arrive,
+.site-motion-ready .system-visual.motion-arrive .draw-line{animation:none}
+/* Everything is visible before scripts load and if motion is disabled. */
+@media(prefers-reduced-motion:reduce){
+ .site-motion-ready .motion-arrive{opacity:1;transform:none}
+}
